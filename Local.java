@@ -1,7 +1,7 @@
 public class Local{
     private int x,y;
     public Local(){}; // Construtor 1.
-    public Local(int x,int y){ // Construtor 2.
+    public Local(int x,int y){ // Construtor 2. //Polimorfismo estático
         this.x=x;this.y=y;
     }
     public int getX(){return x;}
