@@ -1,9 +1,11 @@
 public class Ponto extends Local{
     protected boolean visible;
     protected double area; // Atributo redefinido nas classes filhas.
+    protected double per;
     public Ponto(int x,int y){
         super(x,y); // Construtor da superclasse Local.
         area=0; // Classes filhas deve redefinir esse atributo.
+        per=0;
         visible=false;
     }
 
@@ -34,4 +36,6 @@ public class Ponto extends Local{
     // getArea() será herdado com área redefinida:
     // cada subclasse estabelece seu valor.
     public double getArea(){return area;}
+
+    public double getPer(){return per;}
 }
