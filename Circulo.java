@@ -4,6 +4,7 @@ public class Circulo extends Ponto{
         super(x,y); // Construtor da superclasse Local.
         this.r=r;
         area=Math.PI*r*r; // area redefinida para circulo.
+        per= 2*Math.PI*r;
     }
 
     @Override
@@ -19,4 +20,9 @@ public class Circulo extends Ponto{
         System.out.print("Circulo de raio "+r+" visivel em ");showLoc();
         System.out.println(". ");
     }
+
+    @Override
+    public double getArea(){return area;}
+    @Override
+    public double getPer(){return per;}
 }
